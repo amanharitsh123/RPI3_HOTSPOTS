@@ -11,7 +11,7 @@ sudo rm -rf /etc/default/udhcpd
 sudo mkdir /etc/default
 sudo touch /etc/default/udhcpd
 echo "start 10.0.0.2 " >>   $x
-echo "end 10.0.0.5" >> $x
+echo "end 10.0.0.255" >> $x
 echo "interface wlan0" >> $x
 echo "remaining yes" >> $x
 echo "opt dns 8.8.8.8 4.2.2.2" >> $x
